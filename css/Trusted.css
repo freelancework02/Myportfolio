@@ -1,0 +1,90 @@
+.Logo_container {
+    background: #fff;
+    width: 100vw;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.Logo_container h2 {
+    text-align: center;
+    padding: 20px;
+    color: black !important;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Slider */
+.slick-slide {
+    margin: 0px 15px;
+}
+
+.slick-slide img {
+    width: 150px; /* Set a fixed width */
+    height: 80px; /* Set a fixed height */
+    object-fit: contain; /* Ensure images fit without distortion */
+    display: block;
+    margin: auto;
+    background: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.slick-slide img:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.slick-slider {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+}
+
+.slick-list {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.slick-track {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.slick-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slick-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.slick-arrow:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.slick-prev {
+    left: -50px;
+}
+
+.slick-next {
+    right: -50px;
+}
